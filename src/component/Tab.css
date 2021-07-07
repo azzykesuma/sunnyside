@@ -1,0 +1,42 @@
+.MenuMain {
+    position : relative;
+}
+
+.triangle {
+    position: absolute;
+    top : 20px;
+    right : 20px;
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid white;
+    border-left: 30px solid transparent;
+}
+
+.tabContainer {
+    margin-top : 3em;
+    margin-inline : 10px;
+    background-color: #fff;
+    width : 330px;
+    height : 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: 0.5s ease-in-out;
+}
+
+.NavMenu {
+    display : flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.NavMenu > li {
+    padding-block : 15px;
+}
+
+.NavMenu > li:hover {
+    background-color: hsl(51, 100%, 49%);
+    border-radius: 50px;
+    cursor: pointer;
+}

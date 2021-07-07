@@ -1,38 +1,455 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin : 0;
+  padding : 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Barlow',sans-serif;
+  width : 360px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.mainContainer {
+  display : flex;
   flex-direction: column;
+}
+
+.hamburger {
+  display : block;
+}
+
+.headerContainer {
+  background-image: url('./images/mobile/image-header.jpg');
+  background-repeat: no-repeat;
+  width : 360px;
+  height : 500px;
+  background-size: cover;
+  display : flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.Nav {
+  display : flex;
+  justify-content: space-between;
+  padding-top : 1.5em;
+  padding-inline : 20px;
+  position : relative;
+}
+
+.Nav > img {
+  margin-top : 35px;
+  margin-left: 45px;
+}
+
+.TopNav {
+  display: none;
+}
+
+.Nav > img {
+  cursor: pointer;
+}
+
+.arrow {
+  width : 30px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: absolute;
+  top : 60%;
+  left : 45%;
 }
 
-.App-link {
-  color: #61dafb;
+
+.headerContainer > h1 {
+  font-family: 'Fraunces', sans-serif;
+  color : #fff;
+  display : flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  word-spacing: 10px;
+  text-transform: uppercase;
+  margin-top: 2em;
+  letter-spacing: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.container {
+  display : flex;
+  flex-direction: column;
+}
+
+.innerContainer {
+  background-color : lightgoldenrodyellow;
+  padding : 20px;
+}
+
+.innerContainer > h1 {
+  margin-top : 20px;
+  color : hsl(212, 27%, 19%);
+  font-family: 'Fraunces',sans-serif;
+  font-weight: 900;
+  text-align : center;
+}
+
+.innerContainer > p {
+  font-family: 'Barlow',sans-serif;
+  text-align : center;
+  margin-top : 1.5em;
+  line-height : 1.5em;
+  font-size: 18px;
+  color : hsl(232, 10%, 55%);
+}
+
+h2 {
+  display : flex;
+  justify-content: center;
+  margin-top : 1em;
+  font-family: 'Fraunces',sans-serif;
+  color : hsl(212, 27%, 19%);
+  text-shadow:black;
+  text-transform: uppercase;
+  font-size: 20px;
+  cursor: pointer;
+  /* text-decoration: underline 5px hsl(51, 100%, 49%); */
+}
+
+.three {
+  background-image: url('./images/mobile/image-graphic-design.jpg');
+  height : 600px;
+  background-size: cover;
+  position : relative;
+}
+
+.innerText {
+  position : absolute;
+  top : 60%;
+}
+
+.three > .innerText > h1 {
+  font-family: 'Fraunces',sans-serif;
+  color : hsl(167, 40%, 24%);
+  font-size: 25px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.three > .innerText > p {
+  padding-inline : 15px;
+  text-align: center;
+  color : hsl(167, 40%, 24%);
+  font-family: 'Barlow',sans-serif;
+  line-height: 1.5em;
+}
+
+.four {
+  background-image: url('./images/mobile/image-photography.jpg');
+  background-size: cover;
+  height : 600px;
+  position: relative;
+}
+
+.four > .innerText > h1 {
+  font-family: 'Fraunces',sans-serif;
+  color : hsl(198, 62%, 26%);
+  font-size: 25px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.four > .innerText > p {
+  padding-inline : 15px;
+  text-align: center;
+  color : hsl(198, 62%, 26%);
+  font-family: 'Barlow',sans-serif;
+  line-height: 1.5em;
+}
+
+.testimony {
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgoldenrodyellow;
+}
+
+.testimony > p {
+  font-family: 'Fraunces',sans-serif;
+  letter-spacing: 3px;
+  color : hsl(210, 4%, 67%);
+  margin-block : 70px;
+  text-transform: uppercase;
+}
+
+.innerTestimony {
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.innerTestimony > img {
+  width : 75px;
+  height : 75px;
+  border-radius: 50px;
+  margin-bottom: 45px;
+}
+
+.testimonyDesc {
+  padding-inline : 20px;
+  text-align: center;
+  color : hsl(198, 62%, 26%);
+  font-family: 'Barlow',sans-serif;
+  margin-bottom : 45px;
+  line-height : 1.5em;
+}
+
+.name {
+  font-family: 'Fraunces',sans-serif;
+  color : hsl(212, 27%, 19%);
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.title {
+  color : hsl(210, 4%, 67%);
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+.containerBottom {
+  display : flex;
+  flex-direction: column;
+}
+
+.upper {
+  display : flex;
+}
+
+.milk {
+  background-image: url('./images/mobile/image-gallery-milkbottles.jpg');
+  width : 188px;
+  height : 188px;
+  background-size : cover;
+}
+
+.orange {
+  background-image: url('./images/mobile/image-gallery-orange.jpg');
+  width : 188px;
+  height : 188px;
+  background-size : cover;
+}
+
+.bottom {
+  display : flex;
+}
+
+.cone {
+  background-image: url('./images/mobile/image-gallery-cone.jpg');
+  width : 188px;
+  height : 188px;
+  background-size : cover;
+}
+
+.sugar {
+  background-image: url('./images/mobile/image-gallery-sugar-cubes.jpg');
+  width : 188px;
+  height : 188px;
+  background-size : cover;
+}
+
+footer {
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(168, 34%, 50%);
+}
+
+footer > svg {
+  margin-block : 60px 40px;
+}
+
+
+ul {
+  list-style: none;
+  display : flex;
+}
+
+li {
+  padding-inline : 20px;
+  margin-bottom : 80px;
+  color : hsl(213, 9%, 39%);
+  font-size: 18px;
+}
+
+.navBottom > ul > li:hover {
+  color : white;
+  cursor : pointer
+}
+
+.socmedContainer {
+  padding-bottom: 60px;
+  display : flex;
+}
+
+.socmedContainer > img {
+  padding-inline : 15px;
+  cursor : pointer
+}
+
+.facebook {
+  background-color: transparent;
+  cursor : pointer;
+}
+
+
+@media screen and (min-width : 1400px) {
+  body {
+    min-width: 1400px;
   }
-  to {
-    transform: rotate(360deg);
+  .headerContainer {
+    background-image: url('./images/desktop/image-header.jpg');
+    min-width : 1400px;
+    height : 800px;
+    background-position: center center;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .TopNav {
+    display : flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    right : 45px;
+    top : 45px;
+  }
+
+
+  .TopNav > ul > li {
+    color : #fff;
+    padding-inline : 20px;
+    padding-block : 10px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  .TopNav > ul > li:hover {
+    color : #fff;
+    background-color: #9DDEF9;
+    cursor: pointer;
+  }
+  
+
+
+  .contact {
+    background-color: #fff;
+    color : #000 !important;
+  }
+
+  .contact:hover {
+    opacity: 0.3;
+    color : #fff;
+    cursor: pointer;
+  }
+
+  .arrow {
+    top : 49%;
+    left : 48%;
+  }
+  .one {
+    display : flex;
+    flex-direction: row-reverse;
+    height : 600px;
+  }
+
+  .eggDesktop {
+    background-image: url('./images/desktop/image-transform.jpg');
+    min-width : 700px;
+    background-position: center center;
+  }
+
+  .innerContainer {
+    padding : 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .innerContainer > h1 {
+    margin-top : 150px;
+    text-align : left;
+  }
+  
+  .innerContainer > p {
+    text-align : left;
+    margin-top : 1.5em;
+  }
+
+  h2 {
+    justify-content: left;
+  }
+
+  .two {
+    flex-direction: row;
+  }
+
+  .cupDesktop {
+    background-image: url('./images/desktop/image-stand-out.jpg');
+    min-width : 700px;
+    background-position: center center;
+  }
+
+  .middleContainer {
+    display : flex;
+  }
+  .three {
+    background-image: url('./images/desktop/image-graphic-design.jpg');
+    min-width : 700px;
+  }
+  
+  .four {
+    background-image: url('./images/desktop/image-photography.jpg');
+    min-width : 700px;
+  }
+
+  .innerText {
+    margin-inline : 150px;
+  }
+
+  .testimonyContainer {
+    display : flex;
+    padding-inline : 175px;
+  }
+  .innerTestimony {
+    padding-inline : 10px;
+  }
+
+  .testimonyDesc {
+    margin-bottom: 80px;
+  }
+  .containerBottom {
+    flex-direction: row;
+  }
+  .milk {
+    background-image: url('./images/desktop/image-gallery-milkbottles.jpg');
+    width : 350px;
+    height : 450px;
+  }
+  .orange {
+    background-image: url('./images/desktop/image-gallery-orange.jpg');
+    width : 350px;
+    height : 450px;
+  }
+  .cone {
+    background-image: url('./images/desktop/image-gallery-cone.jpg');
+    width : 350px;
+    height : 450px;
+  }
+  .sugar {
+    background-image: url('./images/desktop/image-gallery-sugarcubes.jpg');
+    width : 350px;
+    height : 450px;
   }
 }
