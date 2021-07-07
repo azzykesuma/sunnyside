@@ -33,6 +33,7 @@
 
 .NavMenu > li {
     margin-block : 20px;
+    cursor: pointer;
 }
 
 
