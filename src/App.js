@@ -32,9 +32,9 @@ function App() {
         {clicked ? null :<img className='arrow' src={arrow} alt='arrow' /> }
         {clicked ? <Tab /> : null}
         <div className='TopNav'>
-          <ul>
-            <li>About</li>
-            <li>Services</li>
+          <ul >
+            <li className='tabList'>About</li>
+            <li >Services</li>
             <li>Project</li>
             <li className='contact'>Contact</li>
           </ul>

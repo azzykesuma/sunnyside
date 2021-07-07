@@ -32,10 +32,12 @@
 }
 
 .NavMenu > li {
-    padding-block : 15px;
+    margin-block : 20px;
 }
 
-.NavMenu > li:hover {
+
+
+.tabList > li:hover {
     background-color: hsl(51, 100%, 49%);
     border-radius: 50px;
     cursor: pointer;

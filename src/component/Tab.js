@@ -7,7 +7,7 @@ function Tab() {
             <div className='triangle'></div>
             <div className='tabContainer'>
                 <ul className='NavMenu'>
-                    <li>About</li>
+                    <li className='NavList'>About</li>
                     <li>Services</li>
                     <li>Projects</li>
                     <li>Contact</li>
